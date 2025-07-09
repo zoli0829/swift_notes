@@ -40,3 +40,4 @@ if let newName = optionalUser.name {
     print(newName)
 }
 
+// Day 3 of doing Coursera
