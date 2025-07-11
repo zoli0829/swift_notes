@@ -11,7 +11,9 @@ var allPhoneNumbers: Set<String> = inPersonAndOverPhone.union(reservationsOverIn
 print(allPhoneNumbers)
 
 var confirmationCodes: Set<String> = ["abc123", "xyz789"]
-print("Number of phone reservations: \(allPhoneNumbers.count), number of confirmation codes: \(confirmationCodes.count)")
+print(
+  "Number of phone reservations: \(allPhoneNumbers.count), number of confirmation codes: \(confirmationCodes.count)"
+)
 
 confirmationCodes.insert("asd123")
 confirmationCodes.insert("asd124")
@@ -21,12 +23,16 @@ print(confirmationCodes)
 
 allPhoneNumbers.remove("000-345-3441")
 confirmationCodes.remove("abc123")
-print("Number of phone reservations: \(allPhoneNumbers.count), number of confirmation codes: \(confirmationCodes.count)")
+print(
+  "Number of phone reservations: \(allPhoneNumbers.count), number of confirmation codes: \(confirmationCodes.count)"
+)
 
 enum PastaTypes: Int {
-    case spaghetti
-    case penne
-    case ravioli
-    case rigatoni
+  case spaghetti
+  case penne
+  case ravioli
+  case rigatoni
 }
 print(PastaTypes.penne.rawValue)
+
+// finished day 4 of coursera
