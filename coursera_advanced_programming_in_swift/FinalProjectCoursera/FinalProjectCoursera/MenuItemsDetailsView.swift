@@ -15,6 +15,7 @@ struct MenuItemsDetailsView: View {
             Text(menuItem.title)
                 .font(.largeTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .bold()
             
             Image(.littleLemonLogo)
                 .resizable()
