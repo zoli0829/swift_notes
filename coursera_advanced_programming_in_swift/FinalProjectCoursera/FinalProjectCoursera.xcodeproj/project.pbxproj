@@ -6,11 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		C264D8672E32CA4100DA977D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DE3C202E2E017F001B25E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2DE3C272E2E017F001B25E9;
+			remoteInfo = FinalProjectCoursera;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C264D8632E32CA4100DA977D /* FinalProjectCourseraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalProjectCourseraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DE3C282E2E017F001B25E9 /* FinalProjectCoursera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectCoursera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		C264D8642E32CA4100DA977D /* FinalProjectCourseraTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FinalProjectCourseraTests;
+			sourceTree = "<group>";
+		};
 		C2DE3C2A2E2E017F001B25E9 /* FinalProjectCoursera */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FinalProjectCoursera;
@@ -19,6 +35,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C264D8602E32CA4100DA977D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2DE3C252E2E017F001B25E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				C2DE3C2A2E2E017F001B25E9 /* FinalProjectCoursera */,
+				C264D8642E32CA4100DA977D /* FinalProjectCourseraTests */,
 				C2DE3C292E2E017F001B25E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C2DE3C282E2E017F001B25E9 /* FinalProjectCoursera.app */,
+				C264D8632E32CA4100DA977D /* FinalProjectCourseraTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +73,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C264D8622E32CA4100DA977D /* FinalProjectCourseraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C264D86B2E32CA4100DA977D /* Build configuration list for PBXNativeTarget "FinalProjectCourseraTests" */;
+			buildPhases = (
+				C264D85F2E32CA4100DA977D /* Sources */,
+				C264D8602E32CA4100DA977D /* Frameworks */,
+				C264D8612E32CA4100DA977D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C264D8682E32CA4100DA977D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C264D8642E32CA4100DA977D /* FinalProjectCourseraTests */,
+			);
+			name = FinalProjectCourseraTests;
+			packageProductDependencies = (
+			);
+			productName = FinalProjectCourseraTests;
+			productReference = C264D8632E32CA4100DA977D /* FinalProjectCourseraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C2DE3C272E2E017F001B25E9 /* FinalProjectCoursera */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2DE3C332E2E0180001B25E9 /* Build configuration list for PBXNativeTarget "FinalProjectCoursera" */;
@@ -80,6 +128,10 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					C264D8622E32CA4100DA977D = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = C2DE3C272E2E017F001B25E9;
+					};
 					C2DE3C272E2E017F001B25E9 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -100,11 +152,19 @@
 			projectRoot = "";
 			targets = (
 				C2DE3C272E2E017F001B25E9 /* FinalProjectCoursera */,
+				C264D8622E32CA4100DA977D /* FinalProjectCourseraTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C264D8612E32CA4100DA977D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2DE3C262E2E017F001B25E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +175,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C264D85F2E32CA4100DA977D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2DE3C242E2E017F001B25E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +191,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C264D8682E32CA4100DA977D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2DE3C272E2E017F001B25E9 /* FinalProjectCoursera */;
+			targetProxy = C264D8672E32CA4100DA977D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C264D8692E32CA4100DA977D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github-zoli0829.FinalProjectCourseraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinalProjectCoursera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FinalProjectCoursera";
+			};
+			name = Debug;
+		};
+		C264D86A2E32CA4100DA977D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github-zoli0829.FinalProjectCourseraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinalProjectCoursera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FinalProjectCoursera";
+			};
+			name = Release;
+		};
 		C2DE3C312E2E0180001B25E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -301,6 +410,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C264D86B2E32CA4100DA977D /* Build configuration list for PBXNativeTarget "FinalProjectCourseraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C264D8692E32CA4100DA977D /* Debug */,
+				C264D86A2E32CA4100DA977D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C2DE3C232E2E017F001B25E9 /* Build configuration list for PBXProject "FinalProjectCoursera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
