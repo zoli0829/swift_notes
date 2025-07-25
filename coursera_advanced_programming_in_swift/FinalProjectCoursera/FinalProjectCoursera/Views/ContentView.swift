@@ -16,3 +16,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+// finished the course today 
