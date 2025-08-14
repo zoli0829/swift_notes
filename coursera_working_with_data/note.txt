@@ -12,4 +12,4 @@ Started the course
 12th day - forgot to push
 13th day - didn't forget to push 
 14th day - created a sign up form
-15th day - learned a bit
+15th day - learned a bit 2
