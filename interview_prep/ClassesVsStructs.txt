@@ -1,0 +1,62 @@
+1. Value Type vs Reference Type
+Structs are value types
+	When you assign a struct to a new variable or pass it to a function, it’s copied.
+	Each copy is independent.
+
+Classes are reference types
+	When you assign a class instance to a new variable or pass it to a function, both variables point to the same instance in memory.
+	Changes in one place affect all references.
+	
+2. Inheritance
+Structs ❌ cannot inherit from other structs.
+
+Classes ✅ can inherit from other classes.
+	Useful when building hierarchies or using polymorphism.
+
+3. Mutability
+Structs are immutable by default when declared with let.
+
+struct User {
+    var name: String
+}
+
+let user1 = User(name: "Alice")
+// user1.name = "Bob" ❌ Error – because it's a let constant (value type)
+
+Classes can have their properties modified even if the instance is declared with let (because the reference itself is constant, not the object’s contents).
+
+class User {
+    var name: String
+    init(name: String) { self.name = name }
+}
+
+let user2 = User(name: "Alice")
+user2.name = "Bob" ✅ Works
+
+4. Memory Management
+Structs live on the stack (in most cases, optimized by the compiler).
+
+Classes live on the heap and are managed by ARC (Automatic Reference Counting).
+	Classes can have reference cycles (retain cycles) if you’re not careful with strong references.
+	
+5. Features Only Classes Have
+	Inheritance
+	Type casting
+	Deinitializers (deinit)
+	Reference semantics
+Structs don’t support those.
+
+6. When to Use What
+Use a Struct when:
+	The data is small and lightweight.
+	You want immutability and safety by default.
+	You don’t need inheritance.
+	Example: CGPoint, CGRect, Date, String, Array, Dictionary are all structs.
+
+Use a Class when:
+	You need inheritance or polymorphism.
+	You want to share state across different parts of your app.
+	You need Objective-C interoperability (NSObject, UIKit elements).
+
+Interview tip answer (short version):
+	"The main difference is that structs are value types while classes are reference types. Structs get copied on assignment, while classes are shared via references. Structs don’t support inheritance, but they’re safer and usually preferred for lightweight models. Classes support inheritance, reference semantics, and deinitializers, making them better for complex objects that need shared state."

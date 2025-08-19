@@ -1,0 +1,47 @@
+UIKit
+The view controller life cycle is specifically a UIKit concept. In UIKit, every screen is typically managed by a subclass of UIViewController. Apple designed a set of lifecycle methods that get called as the view is created, shown, hidden, or destroyed.
+
+Here’s the typical flow:
+
+1. Initialization
+	init(coder:) or init(nibName:bundle:)
+	Happens when the view controller is created, but the view isn’t loaded yet.
+
+2. Loading the View
+	loadView() → Creates the view hierarchy (rarely overridden unless creating views programmatically).
+	viewDidLoad() → Called once after the view is loaded into memory. You usually set up UI elements, data sources, etc. here.
+
+3. View About to Appear
+	viewWillAppear(_:) → Called just before the view comes on screen. Great for refreshing UI with updated data.
+
+4. View Appeared
+	viewDidAppear(_:) → Called after the view is fully on screen. Good for starting animations, network calls, or tracking screen analytics.
+
+5. View About to Disappear
+	viewWillDisappear(_:) → Called before the view is removed. Useful for saving state or canceling tasks.
+
+6. View Disappeared
+	viewDidDisappear(_:) → Called after the view is completely off-screen. Often used for cleanup.
+
+7. Memory Warnings / Deallocation
+	didReceiveMemoryWarning() (older, not common anymore).
+	When the controller is no longer needed, it is deallocated.
+
+So in summary:
+	UIKit’s UIViewController life cycle is crucial for managing memory, performance, and UI updates.
+	
+SwiftUI
+SwiftUI does not use UIViewController in the same way. SwiftUI is declarative — views are a function of state. Instead of a view controller managing when views appear/disappear, SwiftUI uses state-driven rendering.
+
+That said, SwiftUI does provide lifecycle-like hooks:
+
+	onAppear { } → Similar to viewWillAppear / viewDidAppear.
+	onDisappear { } → Similar to viewWillDisappear / viewDidDisappear.
+	App-level lifecycle is managed with @main and the App protocol instead of UIApplicationDelegate.
+
+Under the hood, SwiftUI is still built on UIKit (iOS) or AppKit (macOS). So technically, UIKit view controllers still exist, but SwiftUI abstracts them away.
+
+Interview Tip:
+If you’re asked about View Controller Life Cycle, they mean UIKit. You should walk through the steps (viewDidLoad, viewWillAppear, etc.) and explain what you’d typically use each one for.
+If they pivot to SwiftUI, you can show awareness by saying:
+	"SwiftUI doesn’t use the traditional view controller life cycle — instead it relies on declarative state management, with modifiers like onAppear and onDisappear to achieve similar behaviour."
